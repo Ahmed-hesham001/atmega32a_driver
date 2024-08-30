@@ -5,6 +5,7 @@
 
 #include "DIO.h"
 #include "adc.h"
+
 /**
  * 
  * @param ch
@@ -15,6 +16,7 @@ void adc_select_channel(char ch) {
     ADMUX |= ch;
     _delay_ms(1);
 }
+
 /**
  * 
  * @param freq
@@ -25,6 +27,7 @@ void adc_select_freq(char freq) {
     ADCSRA |= freq;
     _delay_ms(1);
 }
+
 /**
  * 
  * @param ref
@@ -43,6 +46,7 @@ void adc_en() {
 void adc_int_en() {
     ADCSRA |= (1 << ADIE);
 }
+
 /**
  * 
  * @param ref
@@ -56,8 +60,8 @@ void init_adc(char ref, char freq, char ch) {
     adc_select_freq(freq);
 
     adc_select_ref(ref);
-    
-//    adc_int_en();
+
+    adc_int_en();
 
     adc_en();
 

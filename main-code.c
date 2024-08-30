@@ -64,64 +64,82 @@
 //        }
 //    }
 //}
-char input;
+//char input;
+//
+//ISR(INT0_vect) {
+//    lcd4_cmd(clear);
+//    lcd4_print_str("enter pot num: ");
+//    input = read_key();
+//}
+//
+//int main(void) {
+//    init_adc(AVCC, div_factor128, ch0);
+//    init_lcd4();
+//    init_keypad();
+//    init_INT0(INT_FALLING_EDGE);
+//    _delay_ms(100);
+//    lcd4_cmd(clear);
+//    lcd4_print_str("enter pot num: ");
+//    input = read_key();
+//    
+//    while (1) {
+//        switch (input) {
+//            case '1':
+//                adc_select_channel(ch0);
+//                adc_sc();
+//                check_flag;
+//                lcd4_cmd(clear);
+//                lcd4_print_str("pot 1 : ");
+//                lcd4_ptint_int(ADCW * step);
+//                lcd4_print_str("mV");
+//                _delay_ms(500);
+//                break;
+//            case '2':
+//                adc_select_channel(ch1);
+//                adc_sc();
+//                check_flag;
+//                lcd4_cmd(clear);
+//                lcd4_print_str("pot 2 : ");
+//                lcd4_ptint_int(ADCW * step);
+//                lcd4_print_str("mV");
+//                _delay_ms(500);
+//                break;
+//            case '3':
+//                adc_select_channel(ch2);
+//                adc_sc();
+//                check_flag;
+//                lcd4_cmd(clear);
+//                lcd4_print_str("pot 3 : ");
+//                lcd4_ptint_int(ADCW * step);
+//                lcd4_print_str("mV");
+//                _delay_ms(500);
+//                break;
+//            default:
+//                lcd4_cmd(clear);
+//                lcd4_print_str("invalid input>:(");
+//                _delay_ms(1500);
+//                lcd4_cmd(clear);
+//                lcd4_print_str("enter pot num: ");
+//                input = read_key();
+//                break;
+//
+//        }
+//    }
+//}
 
-ISR(INT0_vect) {
-    lcd4_cmd(clear);
-    lcd4_print_str("enter pot num: ");
-    input = read_key();
-}
+#define NORMAL 0
+#define clk_div1   1
+#define clk_div8   2
+#define clk_div64  3
+#define clk_div256 4
+#define clk_div1024 5
+#define ext_clk0_falling 6
+#define ext_clk0_risig 7
 
 int main(void) {
-    sei();
-    init_adc(AVCC, div_factor128, ch0);
-    init_lcd4();
-    init_keypad();
-    init_INT0(INT_FALLING_EDGE);
-    lcd4_cmd(clear);
-    lcd4_print_str("enter pot num: ");
-    input = read_key();
-    while (1) {
-        switch (input) {
-            case '1':
-                adc_select_channel(ch0);
-                adc_sc();
-                check_flag;
-                lcd4_cmd(clear);
-                lcd4_print_str("pot 1 : ");
-                lcd4_ptint_int(ADCW * step);
-                lcd4_print_str("mV");
-                _delay_ms(500);
-                break;
-            case '2':
-                adc_select_channel(ch1);
-                adc_sc();
-                check_flag;
-                lcd4_cmd(clear);
-                lcd4_print_str("pot 2 : ");
-                lcd4_ptint_int(ADCW * step);
-                lcd4_print_str("mV");
-                _delay_ms(500);
-                break;
-            case '3':
-                adc_select_channel(ch2);
-                adc_sc();
-                check_flag;
-                lcd4_cmd(clear);
-                lcd4_print_str("pot 3 : ");
-                lcd4_ptint_int(ADCW * step);
-                lcd4_print_str("mV");
-                _delay_ms(500);
-                break;
-            default:
-                lcd4_cmd(clear);
-                lcd4_print_str("invalid input>:(");
-                _delay_ms(1500);
-                lcd4_cmd(clear);
-                lcd4_print_str("enter pot num: ");
-                input = read_key();
-                break;
 
-        }
+    while (1) {
+
     }
 }
+
