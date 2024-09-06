@@ -20,6 +20,7 @@
 #include "keypad.h"
 #include "adc.h"
 #include "my_interrupt.h"
+#include "my_timer.h"
 
 //password code
 //int main(void) {
@@ -126,18 +127,18 @@
 //        }
 //    }
 //}
-
-#define NORMAL 0
-#define clk_div1   1
-#define clk_div8   2
-#define clk_div64  3
-#define clk_div256 4
-#define clk_div1024 5
-#define ext_clk0_falling 6
-#define ext_clk0_risig 7
-
+ISR(TIMER1_CAPT_vect){
+    lcd4_cmd(clear);
+    lcd4_ptint_int(timer1_ICP_getValue());
+}
 int main(void) {
-
+    init_lcd4();
+    init_timer1(TIMER_NORMAL,clockSelect_Clk_io_1024);
+    timer1_ICP_select_Edge(FALLING_EDGE);
+    timer1_ICP_init();
+    timer1_ICP_noise_filter();
+    timer1_ICP_int_en();
+    sei();
     while (1) {
 
     }

@@ -20,7 +20,7 @@ build/default/production/main-code.o.d \
  d:\mplabx\microchip\xc8\avr\avr\include\stdlib.h \
  d:\mplabx\microchip\xc8\avr\avr\include\stdio.h \
  d:\mplabx\microchip\xc8\avr\avr\include\string.h DIO.h buttons.h leds.h \
- my_lcd.h my_lcd4.h keypad.h adc.h my_interrupt.h
+ my_lcd.h my_lcd4.h keypad.h adc.h my_interrupt.h my_timer.h
 
 d:\mplabx\microchip\xc8\avr\avr\include\avr\io.h:
 
@@ -77,3 +77,5 @@ keypad.h:
 adc.h:
 
 my_interrupt.h:
+
+my_timer.h:
