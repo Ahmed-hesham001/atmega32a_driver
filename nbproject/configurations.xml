@@ -14,6 +14,10 @@
       <itemPath>adc.h</itemPath>
       <itemPath>my_interrupt.h</itemPath>
       <itemPath>my_timer.h</itemPath>
+      <itemPath>my_usart.h</itemPath>
+      <itemPath>spi.h</itemPath>
+      <itemPath>my_i2c.h</itemPath>
+      <itemPath>eeprom.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -38,6 +42,10 @@
       <itemPath>adc.c</itemPath>
       <itemPath>my_interrupt.c</itemPath>
       <itemPath>my_timer.c</itemPath>
+      <itemPath>my_usart.c</itemPath>
+      <itemPath>spi.c</itemPath>
+      <itemPath>my_i2c.c</itemPath>
+      <itemPath>eeprom.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

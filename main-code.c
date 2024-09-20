@@ -21,6 +21,10 @@
 #include "adc.h"
 #include "my_interrupt.h"
 #include "my_timer.h"
+#include "my_functions.h"
+#include "my_usart.h"
+#include "spi.h"
+#include "eeprom.h"
 
 //password code
 //int main(void) {
@@ -127,20 +131,159 @@
 //        }
 //    }
 //}
-ISR(TIMER1_CAPT_vect){
-    lcd4_cmd(clear);
-    lcd4_ptint_int(timer1_ICP_getValue());
-}
-int main(void) {
+//ISR(TIMER1_CAPT_vect){
+//    lcd4_cmd(clear);
+//    lcd4_ptint_int(timer1_ICP_getValue());
+//}
+//int main(void) {
+//    init_lcd4();
+//    init_timer1(TIMER_NORMAL,clockSelect_Clk_io_1024);
+//    timer1_ICP_select_Edge(FALLING_EDGE);
+//    timer1_ICP_init();
+//    timer1_ICP_noise_filter();
+//    timer1_ICP_int_en();
+//    sei();
+//    while (1) {
+//    
+//    }
+//}
+
+////////////////////////////////usart///////////////////////////////
+//#define buzzer PA3
+//
+//int main() {
+//    DDRA |= (1 << buzzer);
+//    init_buttons();
+//    init_lcd4();
+//    init_usart(asyn, 1200);
+//    char message[16];
+//    char state = -1;
+//    while (1) {
+//
+//        if (is_pressed(BTN1)) {
+//            _delay_ms(100);
+//            state = 1;
+//
+//        }
+//        if (is_pressed(BTN2)) {
+//            _delay_ms(100);
+//            state = 2;
+//        }
+//        switch (state) {
+//            case 1:
+//                lcd4_cmd(clear);
+//                strcpy(message, "RECEIVER");
+//                lcd4_print_str(message);
+//                lcd4_set_cur(1, 0);
+////                for (int i = 0; i < 16; ++i) {
+////                    lcd4_print_char(usart_receive_data());
+////                }
+////                _delay_ms(2000);
+//                lcd4_print_char(usart_receive_data());
+//                _delay_ms(2000);
+////                if(usart_receive_data()){
+////                    set_pin('A', buzzer, HIGH);
+////                _delay_ms(250);
+////                set_pin('A', buzzer, LOW);
+////                }
+//                state = -1;
+//                break;
+//            case 2:
+//                lcd4_cmd(clear);
+//                strcpy(message, "TRANSMITTER");
+//                lcd4_print_str(message);
+//                lcd4_set_cur(1, 0);
+////                strcpy(message, "test yasta");
+////                for (int i = 0; i < 16; ++i) {
+////                    usart_send_data(message[i]);
+////                    _delay_ms(500);
+////                    }
+//                usart_send_data('7');
+//                _delay_ms(500);
+//                state = -1;
+//                break;
+//            default:
+//                state = -1;
+//                lcd4_cmd(clear);
+//                strcpy(message, "pick mode :");
+//                lcd4_print_str(message);
+//                break;
+//        }
+//
+//    }
+//    return 0;
+//}
+
+//int main() {
+//    init_spi(master, SPI_CLK_128);
+//    init_leds();
+
+//    init_buttons();
+//
+//    init_lcd4();
+//    _delay_ms(100);
+//    while (1) {
+//                if (is_pressed(BTN0)){
+//                    _delay_ms(150);
+//                    spi_send_data(1);
+//                    lcd4_cmd(clear);
+//                    lcd4_print_char('1');
+//                }
+//                if (is_pressed(BTN1)){
+//                    _delay_ms(150);
+//                    spi_send_data(2);
+//                    lcd4_cmd(clear);
+//                    lcd4_print_char('2');
+//                }
+
+//        char input = spi_get_data();
+//
+//        switch (input) {
+//            case 1:
+//                set_led(LED0, HIGH);
+//                lcd4_cmd(clear);
+//                lcd4_print_char('1');
+//                break;
+//            case 2:
+//                set_led(LED0, LOW);
+//                lcd4_cmd(clear);
+//                lcd4_print_char('2');
+//                break;
+//        }
+
+//    }
+
+int main() {
+
+    init_buttons();
     init_lcd4();
-    init_timer1(TIMER_NORMAL,clockSelect_Clk_io_1024);
-    timer1_ICP_select_Edge(FALLING_EDGE);
-    timer1_ICP_init();
-    timer1_ICP_noise_filter();
-    timer1_ICP_int_en();
-    sei();
+    spi_clk_select(SPI_CLK_128);
+    init_spi(MASTER);
+
+    char data = 'A';
+
+    eeprom_write_char(data, 0x10);
+
+    lcd4_print_char(eeprom_read_char(0x10));
+    _delay_ms(50);
+
+    int i = 0;
     while (1) {
 
-    }
-}
+        if (is_pressed(BTN0)) {
+            if(i>=15 && i<32){
+                lcd4_set_cur(1,0+i-16);
+            }else if (i>=32){
+                lcd4_cmd(clear);
+                lcd4_set_cur(0,0);
+                i=0;
+            }
+            eeprom_write_char(++data, 0x10);
+            _delay_ms(200);
+            lcd4_print_char(eeprom_read_char(0x10));
+            ++i;
+        }
 
+    }
+    return 0;
+}

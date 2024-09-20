@@ -1,5 +1,4 @@
-build/default/production/main-code.o.d \
- build/default/production/main-code.o: main-code.c \
+build/default/production/spi.o.d build/default/production/spi.o: spi.c \
  d:\mplabx\microchip\xc8\avr\avr\include\avr\io.h \
  d:\mplabx\microchip\xc8\avr\avr\include\avr\sfr_defs.h \
  d:\mplabx\microchip\xc8\avr\avr\include\inttypes.h \
@@ -12,16 +11,7 @@ build/default/production/main-code.o.d \
  d:\mplabx\microchip\xc8\avr\avr\include\avr\portpins.h \
  d:\mplabx\microchip\xc8\avr\avr\include\avr\common.h \
  d:\mplabx\microchip\xc8\avr\avr\include\avr\fuse.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\lock.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\interrupt.h \
- d:\mplabx\microchip\xc8\avr\avr\include\util\delay.h \
- d:\mplabx\microchip\xc8\avr\avr\include\util\delay_basic.h \
- d:\mplabx\microchip\xc8\avr\avr\include\math.h \
- d:\mplabx\microchip\xc8\avr\avr\include\stdlib.h \
- d:\mplabx\microchip\xc8\avr\avr\include\stdio.h \
- d:\mplabx\microchip\xc8\avr\avr\include\string.h DIO.h buttons.h leds.h \
- my_lcd.h my_lcd4.h keypad.h adc.h my_interrupt.h my_timer.h \
- my_functions.h my_usart.h spi.h eeprom.h
+ d:\mplabx\microchip\xc8\avr\avr\include\avr\lock.h spi.h DIO.h
 
 d:\mplabx\microchip\xc8\avr\avr\include\avr\io.h:
 
@@ -49,42 +39,6 @@ d:\mplabx\microchip\xc8\avr\avr\include\avr\fuse.h:
 
 d:\mplabx\microchip\xc8\avr\avr\include\avr\lock.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\interrupt.h:
-
-d:\mplabx\microchip\xc8\avr\avr\include\util\delay.h:
-
-d:\mplabx\microchip\xc8\avr\avr\include\util\delay_basic.h:
-
-d:\mplabx\microchip\xc8\avr\avr\include\math.h:
-
-d:\mplabx\microchip\xc8\avr\avr\include\stdlib.h:
-
-d:\mplabx\microchip\xc8\avr\avr\include\stdio.h:
-
-d:\mplabx\microchip\xc8\avr\avr\include\string.h:
-
-DIO.h:
-
-buttons.h:
-
-leds.h:
-
-my_lcd.h:
-
-my_lcd4.h:
-
-keypad.h:
-
-adc.h:
-
-my_interrupt.h:
-
-my_timer.h:
-
-my_functions.h:
-
-my_usart.h:
-
 spi.h:
 
-eeprom.h:
+DIO.h:

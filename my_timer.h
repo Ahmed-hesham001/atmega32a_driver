@@ -135,7 +135,7 @@ void timer2_select_syn_asyn(char clk_mode);
 #define FALLING_EDGE    0
 #define RISING_EDGE     1
 
-char timer1_ICP_getValue();
+int timer1_ICP_getValue();
 void timer1_ICP_select_Edge(char edge);
 void timer1_ICP_noise_filter();
 void timer1_ICP_int_en();

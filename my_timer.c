@@ -416,6 +416,6 @@ void timer1_ICP_select_Edge(char edge) {
     TCCR1B |= edge << ICES1;
 }
 
-char timer1_ICP_getValue(){
+int timer1_ICP_getValue(){
     return ICR1;
 }
