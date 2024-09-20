@@ -52,18 +52,35 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/DIO.o
  .data          0x0000000000000000        0x0 build/default/production/DIO.o
  .bss           0x0000000000000000        0x0 build/default/production/DIO.o
+ .text.set_pin_dir
+                0x0000000000000000       0xf2 build/default/production/DIO.o
  .text.set_port_dir
                 0x0000000000000000       0x60 build/default/production/DIO.o
+ .text.set_port_dir_val
+                0x0000000000000000       0x26 build/default/production/DIO.o
+ .text.set_pin  0x0000000000000000       0xf2 build/default/production/DIO.o
  .text.set_port
                 0x0000000000000000       0x60 build/default/production/DIO.o
  .text.set_port_val
                 0x0000000000000000       0x26 build/default/production/DIO.o
+ .text.read_pin
+                0x0000000000000000       0x6a build/default/production/DIO.o
  .text.read_port
                 0x0000000000000000       0x2a build/default/production/DIO.o
  .text.toggle_pin
                 0x0000000000000000       0x6e build/default/production/DIO.o
  .text.toggle_port
                 0x0000000000000000       0x36 build/default/production/DIO.o
+ .debug_info    0x0000000000000000      0x4bd build/default/production/DIO.o
+ .debug_abbrev  0x0000000000000000       0xe1 build/default/production/DIO.o
+ .debug_loc     0x0000000000000000      0x470 build/default/production/DIO.o
+ .debug_aranges
+                0x0000000000000000       0x68 build/default/production/DIO.o
+ .debug_ranges  0x0000000000000000       0x58 build/default/production/DIO.o
+ .debug_line    0x0000000000000000      0x3ca build/default/production/DIO.o
+ .debug_str     0x0000000000000000       0x13 build/default/production/DIO.o
+ .comment       0x0000000000000000       0x30 build/default/production/DIO.o
+ .debug_frame   0x0000000000000000       0xb4 build/default/production/DIO.o
  .text          0x0000000000000000        0x0 build/default/production/leds.o
  .data          0x0000000000000000        0x0 build/default/production/leds.o
  .bss           0x0000000000000000        0x0 build/default/production/leds.o
@@ -85,6 +102,20 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/buttons.o
  .data          0x0000000000000000        0x0 build/default/production/buttons.o
  .bss           0x0000000000000000        0x0 build/default/production/buttons.o
+ .text.init_buttons
+                0x0000000000000000       0x2c build/default/production/buttons.o
+ .text.is_pressed
+                0x0000000000000000       0x38 build/default/production/buttons.o
+ .debug_info    0x0000000000000000      0x35e build/default/production/buttons.o
+ .debug_abbrev  0x0000000000000000       0x9a build/default/production/buttons.o
+ .debug_loc     0x0000000000000000       0x80 build/default/production/buttons.o
+ .debug_aranges
+                0x0000000000000000       0x28 build/default/production/buttons.o
+ .debug_ranges  0x0000000000000000       0x18 build/default/production/buttons.o
+ .debug_line    0x0000000000000000       0x84 build/default/production/buttons.o
+ .debug_str     0x0000000000000000       0x15 build/default/production/buttons.o
+ .comment       0x0000000000000000       0x30 build/default/production/buttons.o
+ .debug_frame   0x0000000000000000       0x34 build/default/production/buttons.o
  .text          0x0000000000000000        0x0 build/default/production/my_lcd.o
  .data          0x0000000000000000        0x0 build/default/production/my_lcd.o
  .bss           0x0000000000000000        0x0 build/default/production/my_lcd.o
@@ -115,10 +146,29 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/my_lcd4.o
  .data          0x0000000000000000        0x0 build/default/production/my_lcd4.o
  .bss           0x0000000000000000        0x0 build/default/production/my_lcd4.o
+ .text.lcd4_EN  0x0000000000000000       0x12 build/default/production/my_lcd4.o
+ .text.lcd4_cmd
+                0x0000000000000000       0x54 build/default/production/my_lcd4.o
+ .text.init_lcd4
+                0x0000000000000000       0x62 build/default/production/my_lcd4.o
+ .text.lcd4_print_char
+                0x0000000000000000       0x48 build/default/production/my_lcd4.o
  .text.lcd4_print_str
                 0x0000000000000000       0x1e build/default/production/my_lcd4.o
  .text.lcd4_ptint_int
                 0x0000000000000000       0x38 build/default/production/my_lcd4.o
+ .text.lcd4_set_cur
+                0x0000000000000000       0x12 build/default/production/my_lcd4.o
+ .debug_info    0x0000000000000000      0x742 build/default/production/my_lcd4.o
+ .debug_abbrev  0x0000000000000000      0x17f build/default/production/my_lcd4.o
+ .debug_loc     0x0000000000000000      0x32f build/default/production/my_lcd4.o
+ .debug_aranges
+                0x0000000000000000       0x50 build/default/production/my_lcd4.o
+ .debug_ranges  0x0000000000000000       0x40 build/default/production/my_lcd4.o
+ .debug_line    0x0000000000000000      0x23f build/default/production/my_lcd4.o
+ .debug_str     0x0000000000000000       0x1d build/default/production/my_lcd4.o
+ .comment       0x0000000000000000       0x30 build/default/production/my_lcd4.o
+ .debug_frame   0x0000000000000000       0xb0 build/default/production/my_lcd4.o
  .text          0x0000000000000000        0x0 build/default/production/keypad.o
  .data          0x0000000000000000        0x0 build/default/production/keypad.o
  .bss           0x0000000000000000        0x0 build/default/production/keypad.o
@@ -314,40 +364,84 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/spi.o
  .data          0x0000000000000000        0x0 build/default/production/spi.o
  .bss           0x0000000000000000        0x0 build/default/production/spi.o
+ .text.init_spi
+                0x0000000000000000       0x58 build/default/production/spi.o
  .text.spi_int_en
                 0x0000000000000000        0x4 build/default/production/spi.o
+ .text.spi_master_transmit_char
+                0x0000000000000000        0x8 build/default/production/spi.o
  .text.spi_slave_receive_char
                 0x0000000000000000        0x8 build/default/production/spi.o
  .text.spi_master_transmit_str
                 0x0000000000000000       0x1e build/default/production/spi.o
+ .text.spi_master_receive_char
+                0x0000000000000000        0xa build/default/production/spi.o
  .text.spi_transmit_order
                 0x0000000000000000       0x12 build/default/production/spi.o
+ .text.spi_clk_select
+                0x0000000000000000       0x4a build/default/production/spi.o
  .text.spi_slave_select
                 0x0000000000000000       0x12 build/default/production/spi.o
  .text.spi_dissconnect_slave
                 0x0000000000000000       0x12 build/default/production/spi.o
+ .debug_info    0x0000000000000000      0x575 build/default/production/spi.o
+ .debug_abbrev  0x0000000000000000      0x140 build/default/production/spi.o
+ .debug_loc     0x0000000000000000      0x1ce build/default/production/spi.o
+ .debug_aranges
+                0x0000000000000000       0x68 build/default/production/spi.o
+ .debug_ranges  0x0000000000000000       0x58 build/default/production/spi.o
+ .debug_line    0x0000000000000000      0x21a build/default/production/spi.o
+ .debug_str     0x0000000000000000       0x21 build/default/production/spi.o
+ .comment       0x0000000000000000       0x30 build/default/production/spi.o
+ .debug_frame   0x0000000000000000       0xc0 build/default/production/spi.o
  .text          0x0000000000000000        0x0 build/default/production/my_i2c.o
  .data          0x0000000000000000        0x0 build/default/production/my_i2c.o
  .bss           0x0000000000000000        0x0 build/default/production/my_i2c.o
  .text.init_twi
-                0x0000000000000000        0xa build/default/production/my_i2c.o
+                0x0000000000000000        0x8 build/default/production/my_i2c.o
+ .text.twi_clk_select
+                0x0000000000000000       0x2c build/default/production/my_i2c.o
+ .text.twi_int_en
+                0x0000000000000000        0x8 build/default/production/my_i2c.o
+ .text.twi_address_write
+                0x0000000000000000        0x4 build/default/production/my_i2c.o
+ .text.twi_address_read
+                0x0000000000000000        0x6 build/default/production/my_i2c.o
  .text.twi_master_tans
-                0x0000000000000000       0x1a build/default/production/my_i2c.o
- .debug_info    0x0000000000000000      0x2c5 build/default/production/my_i2c.o
- .debug_abbrev  0x0000000000000000       0x8d build/default/production/my_i2c.o
- .debug_loc     0x0000000000000000       0x71 build/default/production/my_i2c.o
+                0x0000000000000000       0x54 build/default/production/my_i2c.o
+ .text.twi_master_rec
+                0x0000000000000000       0x52 build/default/production/my_i2c.o
+ .text.twi_slave_rec
+                0x0000000000000000       0x30 build/default/production/my_i2c.o
+ .debug_info    0x0000000000000000      0x414 build/default/production/my_i2c.o
+ .debug_abbrev  0x0000000000000000       0xce build/default/production/my_i2c.o
+ .debug_loc     0x0000000000000000      0x2b7 build/default/production/my_i2c.o
  .debug_aranges
-                0x0000000000000000       0x28 build/default/production/my_i2c.o
- .debug_ranges  0x0000000000000000       0x18 build/default/production/my_i2c.o
- .debug_line    0x0000000000000000       0xb5 build/default/production/my_i2c.o
- .debug_str     0x0000000000000000        0x0 build/default/production/my_i2c.o
+                0x0000000000000000       0x58 build/default/production/my_i2c.o
+ .debug_ranges  0x0000000000000000       0x48 build/default/production/my_i2c.o
+ .debug_line    0x0000000000000000      0x2a5 build/default/production/my_i2c.o
+ .debug_str     0x0000000000000000        0xb build/default/production/my_i2c.o
  .comment       0x0000000000000000       0x30 build/default/production/my_i2c.o
- .debug_frame   0x0000000000000000       0x34 build/default/production/my_i2c.o
+ .debug_frame   0x0000000000000000       0x94 build/default/production/my_i2c.o
  .text          0x0000000000000000        0x0 build/default/production/eeprom.o
  .data          0x0000000000000000        0x0 build/default/production/eeprom.o
  .bss           0x0000000000000000        0x0 build/default/production/eeprom.o
+ .text.eeprom_write_char
+                0x0000000000000000       0x84 build/default/production/eeprom.o
  .text.eeprom_write_str
                 0x0000000000000000       0x94 build/default/production/eeprom.o
+ .text.eeprom_read_char
+                0x0000000000000000       0x46 build/default/production/eeprom.o
+ .debug_info    0x0000000000000000      0x767 build/default/production/eeprom.o
+ .debug_abbrev  0x0000000000000000      0x160 build/default/production/eeprom.o
+ .debug_loc     0x0000000000000000      0x278 build/default/production/eeprom.o
+ .debug_aranges
+                0x0000000000000000       0x30 build/default/production/eeprom.o
+ .debug_ranges  0x0000000000000000       0x20 build/default/production/eeprom.o
+ .debug_line    0x0000000000000000      0x1c2 build/default/production/eeprom.o
+ .debug_str     0x0000000000000000       0x39 build/default/production/eeprom.o
+ .comment       0x0000000000000000       0x30 build/default/production/eeprom.o
+ .debug_frame   0x0000000000000000       0x68 build/default/production/eeprom.o
  .text          0x0000000000000000        0xe d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
  .data          0x0000000000000000        0x0 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
  .bss           0x0000000000000000        0x0 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
@@ -866,13 +960,8 @@ END GROUP
 
 .comment        0x0000000000000000       0x5b
  *(.comment)
- .comment       0x0000000000000000       0x2f build/default/production/DIO.o
+ .comment       0x0000000000000000       0x2f build/default/production/main-code.o
                                          0x30 (size before relaxing)
- .comment       0x000000000000002f       0x30 build/default/production/buttons.o
- .comment       0x000000000000002f       0x30 build/default/production/main-code.o
- .comment       0x000000000000002f       0x30 build/default/production/my_lcd4.o
- .comment       0x000000000000002f       0x30 build/default/production/spi.o
- .comment       0x000000000000002f       0x30 build/default/production/eeprom.o
  .comment       0x000000000000002f       0x2c d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
                                          0x2d (size before relaxing)
  .comment       0x000000000000005b       0x2d d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
@@ -908,81 +997,40 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x198
+.debug_aranges  0x0000000000000000       0x20
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x68 build/default/production/DIO.o
- .debug_aranges
-                0x0000000000000068       0x28 build/default/production/buttons.o
- .debug_aranges
-                0x0000000000000090       0x20 build/default/production/main-code.o
- .debug_aranges
-                0x00000000000000b0       0x50 build/default/production/my_lcd4.o
- .debug_aranges
-                0x0000000000000100       0x68 build/default/production/spi.o
- .debug_aranges
-                0x0000000000000168       0x30 build/default/production/eeprom.o
+                0x0000000000000000       0x20 build/default/production/main-code.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x2607
+.debug_info     0x0000000000000000      0x740
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x4e6 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
- .debug_info    0x00000000000004e6      0x4bd build/default/production/DIO.o
- .debug_info    0x00000000000009a3      0x35e build/default/production/buttons.o
- .debug_info    0x0000000000000d01      0x4e8 build/default/production/main-code.o
- .debug_info    0x00000000000011e9      0x742 build/default/production/my_lcd4.o
- .debug_info    0x000000000000192b      0x575 build/default/production/spi.o
- .debug_info    0x0000000000001ea0      0x767 build/default/production/eeprom.o
+ .debug_info    0x00000000000004e6      0x25a build/default/production/main-code.o
 
-.debug_abbrev   0x0000000000000000      0xb35
+.debug_abbrev   0x0000000000000000      0x4df
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x4a3 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
- .debug_abbrev  0x00000000000004a3       0xe1 build/default/production/DIO.o
- .debug_abbrev  0x0000000000000584       0x9a build/default/production/buttons.o
- .debug_abbrev  0x000000000000061e       0xf8 build/default/production/main-code.o
- .debug_abbrev  0x0000000000000716      0x17f build/default/production/my_lcd4.o
- .debug_abbrev  0x0000000000000895      0x140 build/default/production/spi.o
- .debug_abbrev  0x00000000000009d5      0x160 build/default/production/eeprom.o
+ .debug_abbrev  0x00000000000004a3       0x3c build/default/production/main-code.o
 
-.debug_line     0x0000000000000000      0xcdf
+.debug_line     0x0000000000000000      0x150
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x116 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
- .debug_line    0x0000000000000116      0x3ca build/default/production/DIO.o
- .debug_line    0x00000000000004e0       0x84 build/default/production/buttons.o
- .debug_line    0x0000000000000564      0x160 build/default/production/main-code.o
- .debug_line    0x00000000000006c4      0x23f build/default/production/my_lcd4.o
- .debug_line    0x0000000000000903      0x21a build/default/production/spi.o
- .debug_line    0x0000000000000b1d      0x1c2 build/default/production/eeprom.o
+ .debug_line    0x0000000000000116       0x3a build/default/production/main-code.o
 
-.debug_frame    0x0000000000000000      0x2e4
+.debug_frame    0x0000000000000000       0x24
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0xb4 build/default/production/DIO.o
- .debug_frame   0x00000000000000b4       0x34 build/default/production/buttons.o
- .debug_frame   0x00000000000000e8       0x24 build/default/production/main-code.o
- .debug_frame   0x000000000000010c       0xb0 build/default/production/my_lcd4.o
- .debug_frame   0x00000000000001bc       0xc0 build/default/production/spi.o
- .debug_frame   0x000000000000027c       0x68 build/default/production/eeprom.o
+ .debug_frame   0x0000000000000000       0x24 build/default/production/main-code.o
 
-.debug_str      0x0000000000000000      0x2b8
+.debug_str      0x0000000000000000      0x196
  *(.debug_str)
  .debug_str     0x0000000000000000      0x196 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
- .debug_str     0x0000000000000196       0x13 build/default/production/DIO.o
- .debug_str     0x00000000000001a9       0x15 build/default/production/buttons.o
- .debug_str     0x00000000000001be       0x83 build/default/production/main-code.o
- .debug_str     0x0000000000000241       0x1d build/default/production/my_lcd4.o
- .debug_str     0x000000000000025e       0x21 build/default/production/spi.o
- .debug_str     0x000000000000027f       0x39 build/default/production/eeprom.o
+ .debug_str     0x0000000000000196        0x0 build/default/production/main-code.o
 
-.debug_loc      0x0000000000000000      0xd55
+.debug_loc
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x470 build/default/production/DIO.o
- .debug_loc     0x0000000000000470       0x80 build/default/production/buttons.o
- .debug_loc     0x00000000000004f0       0xf0 build/default/production/main-code.o
- .debug_loc     0x00000000000005e0      0x32f build/default/production/my_lcd4.o
- .debug_loc     0x000000000000090f      0x1ce build/default/production/spi.o
- .debug_loc     0x0000000000000add      0x278 build/default/production/eeprom.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1002,14 +1050,9 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000      0x138
+.debug_ranges   0x0000000000000000       0x10
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000       0x58 build/default/production/DIO.o
- .debug_ranges  0x0000000000000058       0x18 build/default/production/buttons.o
- .debug_ranges  0x0000000000000070       0x10 build/default/production/main-code.o
- .debug_ranges  0x0000000000000080       0x40 build/default/production/my_lcd4.o
- .debug_ranges  0x00000000000000c0       0x58 build/default/production/spi.o
- .debug_ranges  0x0000000000000118       0x20 build/default/production/eeprom.o
+ .debug_ranges  0x0000000000000000       0x10 build/default/production/main-code.o
 
 .debug_macro
  *(.debug_macro)
@@ -1022,151 +1065,56 @@ LOAD data_init
  .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x3c D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
 
-.text.set_pin_dir
-                0x000000000000006c       0xf2
- .text.set_pin_dir
-                0x000000000000006c       0xf2 build/default/production/DIO.o
-                0x000000000000006c                set_pin_dir
+.text.exit      0x000000000000006c       0x16
+ .text.exit     0x000000000000006c       0x16 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x000000000000006c                exit
 
-.text.set_pin   0x000000000000015e       0xf2
- .text.set_pin  0x000000000000015e       0xf2 build/default/production/DIO.o
-                0x000000000000015e                set_pin
+.text           0x0000000000000082        0x4
+ .text          0x0000000000000082        0x4 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+                0x0000000000000082                __vector_1
+                0x0000000000000082                __vector_12
+                0x0000000000000082                __bad_interrupt
+                0x0000000000000082                __vector_6
+                0x0000000000000082                __vector_3
+                0x0000000000000082                __vector_11
+                0x0000000000000082                __vector_13
+                0x0000000000000082                __vector_17
+                0x0000000000000082                __vector_19
+                0x0000000000000082                __vector_7
+                0x0000000000000082                __vector_5
+                0x0000000000000082                __vector_4
+                0x0000000000000082                __vector_9
+                0x0000000000000082                __vector_2
+                0x0000000000000082                __vector_15
+                0x0000000000000082                __vector_8
+                0x0000000000000082                __vector_14
+                0x0000000000000082                __vector_10
+                0x0000000000000082                __vector_16
+                0x0000000000000082                __vector_18
+                0x0000000000000082                __vector_20
 
-.text.main      0x0000000000000250       0xa2
- .text.main     0x0000000000000250       0xa2 build/default/production/main-code.o
-                0x0000000000000250                main
+.text._Exit     0x0000000000000086        0x4
+ .text._Exit    0x0000000000000086        0x4 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+                0x0000000000000086                _Exit
 
-.text.eeprom_write_char
-                0x00000000000002f2       0x84
- .text.eeprom_write_char
-                0x00000000000002f2       0x84 build/default/production/eeprom.o
-                0x00000000000002f2                eeprom_write_char
-
-.text.read_pin  0x0000000000000376       0x6a
- .text.read_pin
-                0x0000000000000376       0x6a build/default/production/DIO.o
-                0x0000000000000376                read_pin
-
-.text.init_lcd4
-                0x00000000000003e0       0x62
- .text.init_lcd4
-                0x00000000000003e0       0x62 build/default/production/my_lcd4.o
-                0x00000000000003e0                init_lcd4
-
-.text.init_spi  0x0000000000000442       0x58
- .text.init_spi
-                0x0000000000000442       0x58 build/default/production/spi.o
-                0x0000000000000442                init_spi
-
-.text.lcd4_cmd  0x000000000000049a       0x54
- .text.lcd4_cmd
-                0x000000000000049a       0x54 build/default/production/my_lcd4.o
-                0x000000000000049a                lcd4_cmd
-
-.text.spi_clk_select
-                0x00000000000004ee       0x4a
- .text.spi_clk_select
-                0x00000000000004ee       0x4a build/default/production/spi.o
-                0x00000000000004ee                spi_clk_select
-
-.text.lcd4_print_char
-                0x0000000000000538       0x48
- .text.lcd4_print_char
-                0x0000000000000538       0x48 build/default/production/my_lcd4.o
-                0x0000000000000538                lcd4_print_char
-
-.text.eeprom_read_char
-                0x0000000000000580       0x46
- .text.eeprom_read_char
-                0x0000000000000580       0x46 build/default/production/eeprom.o
-                0x0000000000000580                eeprom_read_char
-
-.text.is_pressed
-                0x00000000000005c6       0x38
- .text.is_pressed
-                0x00000000000005c6       0x38 build/default/production/buttons.o
-                0x00000000000005c6                is_pressed
-
-.text.init_buttons
-                0x00000000000005fe       0x2c
- .text.init_buttons
-                0x00000000000005fe       0x2c build/default/production/buttons.o
-                0x00000000000005fe                init_buttons
-
-.text.set_port_dir_val
-                0x000000000000062a       0x26
- .text.set_port_dir_val
-                0x000000000000062a       0x26 build/default/production/DIO.o
-                0x000000000000062a                set_port_dir_val
-
-.text.exit      0x0000000000000650       0x16
- .text.exit     0x0000000000000650       0x16 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
-                0x0000000000000650                exit
-
-.text.lcd4_EN   0x0000000000000666       0x12
- .text.lcd4_EN  0x0000000000000666       0x12 build/default/production/my_lcd4.o
-                0x0000000000000666                lcd4_EN
-
-.text.lcd4_set_cur
-                0x0000000000000678       0x12
- .text.lcd4_set_cur
-                0x0000000000000678       0x12 build/default/production/my_lcd4.o
-                0x0000000000000678                lcd4_set_cur
-
-.text.spi_master_receive_char
-                0x000000000000068a        0xa
- .text.spi_master_receive_char
-                0x000000000000068a        0xa build/default/production/spi.o
-                0x000000000000068a                spi_master_receive_char
-
-.text.spi_master_transmit_char
-                0x0000000000000694        0x8
- .text.spi_master_transmit_char
-                0x0000000000000694        0x8 build/default/production/spi.o
-                0x0000000000000694                spi_master_transmit_char
-
-.text           0x000000000000069c        0x4
- .text          0x000000000000069c        0x4 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
-                0x000000000000069c                __vector_1
-                0x000000000000069c                __vector_12
-                0x000000000000069c                __bad_interrupt
-                0x000000000000069c                __vector_6
-                0x000000000000069c                __vector_3
-                0x000000000000069c                __vector_11
-                0x000000000000069c                __vector_13
-                0x000000000000069c                __vector_17
-                0x000000000000069c                __vector_19
-                0x000000000000069c                __vector_7
-                0x000000000000069c                __vector_5
-                0x000000000000069c                __vector_4
-                0x000000000000069c                __vector_9
-                0x000000000000069c                __vector_2
-                0x000000000000069c                __vector_15
-                0x000000000000069c                __vector_8
-                0x000000000000069c                __vector_14
-                0x000000000000069c                __vector_10
-                0x000000000000069c                __vector_16
-                0x000000000000069c                __vector_18
-                0x000000000000069c                __vector_20
-
-.text._Exit     0x00000000000006a0        0x4
- .text._Exit    0x00000000000006a0        0x4 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
-                0x00000000000006a0                _Exit
+.text.main      0x000000000000008a        0x2
+ .text.main     0x000000000000008a        0x2 build/default/production/main-code.o
+                0x000000000000008a                main
 
 .text.__dummy_fini
-                0x00000000000006a4        0x2
+                0x000000000000008c        0x2
  .text.__dummy_fini
-                0x00000000000006a4        0x2 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
-                0x00000000000006a4                _fini
+                0x000000000000008c        0x2 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x000000000000008c                _fini
 
 .text.__dummy_funcs_on_exit
-                0x00000000000006a6        0x2
+                0x000000000000008e        0x2
  .text.__dummy_funcs_on_exit
-                0x00000000000006a6        0x2 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
-                0x00000000000006a6                __funcs_on_exit
+                0x000000000000008e        0x2 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x000000000000008e                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x00000000000006a8        0x2
+                0x0000000000000090        0x2
  .text.__dummy_simulator_exit
-                0x00000000000006a8        0x2 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
-                0x00000000000006a8                __simulator_exit
+                0x0000000000000090        0x2 d:/mplabx/microchip/xc8/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x0000000000000090                __simulator_exit

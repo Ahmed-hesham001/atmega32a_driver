@@ -253,37 +253,45 @@
 
 //    }
 
-int main() {
+//int main() {
+//
+//    init_buttons();
+//    init_lcd4();
+//    spi_clk_select(SPI_CLK_128);
+//    init_spi(MASTER);
+//
+//    char data = 'A';
+//
+//    eeprom_write_char(data, 0x10);
+//
+//    lcd4_print_char(eeprom_read_char(0x10));
+//    _delay_ms(50);
+//
+//    int i = 0;
+//    while (1) {
+//
+//        if (is_pressed(BTN0)) {
+//            if(i>=15 && i<32){
+//                lcd4_set_cur(1,0+i-16);
+//            }else if (i>=32){
+//                lcd4_cmd(clear);
+//                lcd4_set_cur(0,0);
+//                i=0;
+//            }
+//            eeprom_write_char(++data, 0x10);
+//            _delay_ms(200);
+//            lcd4_print_char(eeprom_read_char(0x10));
+//            ++i;
+//        }
+//
+//    }
+//    return 0;
+//}
 
-    init_buttons();
-    init_lcd4();
-    spi_clk_select(SPI_CLK_128);
-    init_spi(MASTER);
-
-    char data = 'A';
-
-    eeprom_write_char(data, 0x10);
-
-    lcd4_print_char(eeprom_read_char(0x10));
-    _delay_ms(50);
-
-    int i = 0;
-    while (1) {
-
-        if (is_pressed(BTN0)) {
-            if(i>=15 && i<32){
-                lcd4_set_cur(1,0+i-16);
-            }else if (i>=32){
-                lcd4_cmd(clear);
-                lcd4_set_cur(0,0);
-                i=0;
-            }
-            eeprom_write_char(++data, 0x10);
-            _delay_ms(200);
-            lcd4_print_char(eeprom_read_char(0x10));
-            ++i;
-        }
-
+int main(){
+    
+    while (1){
+        
     }
     return 0;
 }
