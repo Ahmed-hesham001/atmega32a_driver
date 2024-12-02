@@ -61,7 +61,7 @@ void init_adc(char ref, char freq, char ch) {
 
     adc_select_ref(ref);
 
-    adc_int_en();
+   // adc_int_en();
 
     adc_en();
 

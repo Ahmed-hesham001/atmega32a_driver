@@ -80,15 +80,14 @@ char twi_address_read(char address);
 char twi_master_tans(char slave, char data);
 char twi_master_rec(char slave);
 
-void twi_master_tans_buffer(char slave, char *pData);
+char twi_master_tans_buffer(char slave_address, char* pdata, char arr_size);
 char* twi_master_rec_buffer(char slave);
 
 
 
-void twi_slave_trans();
+char twi_slave_trans(char data);
 char twi_slave_rec();
 void twi_slave_trans_buffer();
-void twi_slave_trans_buffer();
-
+char twi_slave_rec_buffer(char* pdata, int arr_size);
 #endif	/* MY_I2C_H */
 

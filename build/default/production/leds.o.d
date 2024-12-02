@@ -1,43 +1,44 @@
 build/default/production/leds.o.d build/default/production/leds.o: leds.c \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\io.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\sfr_defs.h \
- d:\mplabx\microchip\xc8\avr\avr\include\inttypes.h \
- d:\mplabx\microchip\xc8\avr\avr\include\features.h \
- d:\mplabx\microchip\xc8\avr\lib\gcc\avr\5.4.0\include\stdint.h \
- d:\mplabx\microchip\xc8\avr\avr\include\stdint.h \
- d:\mplabx\microchip\xc8\avr\avr\include\bits\alltypes.h \
- d:\mplabx\microchip\xc8\avr\avr\include\bits\stdint.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\io.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\sfr_defs.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\inttypes.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\features.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\lib\gcc\avr\5.4.0\include\stdint.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\stdint.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\bits\alltypes.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\bits\stdint.h \
  D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/include/avr/iom32a.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\portpins.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\common.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\fuse.h \
- d:\mplabx\microchip\xc8\avr\avr\include\avr\lock.h DIO.h leds.h
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\portpins.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\common.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\fuse.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\lock.h DIO.h \
+ leds.h
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\io.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\io.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\sfr_defs.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\sfr_defs.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\inttypes.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\inttypes.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\features.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\features.h:
 
-d:\mplabx\microchip\xc8\avr\lib\gcc\avr\5.4.0\include\stdint.h:
+c:\program\ files\microchip\xc8\v2.50\avr\lib\gcc\avr\5.4.0\include\stdint.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\stdint.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\stdint.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\bits\alltypes.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\bits\alltypes.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\bits\stdint.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\bits\stdint.h:
 
 D:/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/include/avr/iom32a.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\portpins.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\portpins.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\common.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\common.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\fuse.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\fuse.h:
 
-d:\mplabx\microchip\xc8\avr\avr\include\avr\lock.h:
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\lock.h:
 
 DIO.h:
 

@@ -201,7 +201,7 @@ void timer2_COMP_int_en() {
 }
 
 void init_OC2() {
-    set_pin_dir('B', OC2, OUT);
+    set_pin_dir('D', OC2, OUT);
 }
 
 void OC2_select_mode(char mode) {
